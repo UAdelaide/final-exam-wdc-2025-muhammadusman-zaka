@@ -65,33 +65,7 @@
           errorMessage: ''
         };
       },
-
-      async mounted(){
-        await this.loadDogsWithPhotos();
-      },
-
-      methods: {
-        async loadDogsWithPhotos(){
-          try{
-            const res = await fetch('/api/dogs');
-            if(!res.ok) throw new Error('Failed to load dogs');
-            const dogsData = await res.json();
-
-            const dogsWithPhotos = await Promise.all(
-              dogsData.map(async(dog) =>{
-                const imgRes = await fetch('https://dog.ceo/api/breeds/image/random');
-                const imgData = await imgRes.json();
-                return {
-                  ...dog,
-                  photoUrl: imgData.message
-                };
-              })
-            );
-            this.dogs = dogsWithPhotos;
-          } catch(err){
-          this.errorMessage = err.message;
-          }
-        },
+      
         async handleLogin() {
           this.errorMessage = '';
           try {
