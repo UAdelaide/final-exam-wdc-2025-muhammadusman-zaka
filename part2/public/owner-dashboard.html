@@ -126,7 +126,10 @@
         }
 
         onMounted(() => {
-          var role = sessionStorage.
+          var role = sessionStorage.getItem('userRole');
+          if(role != 'owner'){
+            // 
+          }
           loadWalks();
         });
 
