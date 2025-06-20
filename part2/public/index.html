@@ -73,7 +73,9 @@
             if(!res.ok) throw new Error('Failed to load dogs');
             const dogsData = await res.json();
 
-            const dogsWithPhotos = await 
+            const dogsWithPhotos = await Promise.all(
+              dogsData
+            )
           }
         }
         async handleLogin() {
