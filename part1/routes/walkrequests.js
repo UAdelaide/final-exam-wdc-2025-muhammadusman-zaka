@@ -13,5 +13,8 @@ router.get('/open', async (req, res) => {
              WHERE wr.status = 'open'`
         );
         await connection.end();
+        res.sendStatus(200).json(rows);
+    } catch{
+        
     }
 });
