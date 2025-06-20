@@ -20,7 +20,9 @@ router.post('/', async(req, res) => {
         }
 
         var user = rows[0];
-        if(user.password_hash !== password)
+        if(user.password_hash !== password){
+            return res.status(401).json({ error: 'Invalid username or password'});
+        }
     }
 
 });
