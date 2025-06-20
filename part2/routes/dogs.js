@@ -15,6 +15,7 @@ router.get('/', async(req, res) => {
 
         const params = [];
 
+        // If an owner is provided in the query then we add the where clause to our SQL query
         if(owner){
             sql += `WHERE u.username = ?`;
             params.push(owner);
