@@ -18,3 +18,5 @@ router.get('/open', async (req, res) => {
         res.sendStatus(500).json({ error: err.message });
     }
 });
+
+module.exports = router
