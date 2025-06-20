@@ -2,4 +2,6 @@ var express = require('express');
 var router = express.Router();
 var dbConnection = require('../db');
 
-router.post('/')
+router.post('/', async(req, res) => {
+    
+})
