@@ -21,8 +21,9 @@ router.get('/', async(req, res) => {
             params.push(owner);
         }
 
-        const [rows] = await
+        const [rows] = await connection.query(sql, params);
         await connection.end();
+
         res.status(200).json(rows);
 
     } catch(err){
