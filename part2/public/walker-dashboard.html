@@ -83,7 +83,8 @@
         }
 
         onMounted(() => {
-          var role = 
+          var role = sessionStorage.getItem('userRole');
+          
           loadWalkRequests();
         });
 
