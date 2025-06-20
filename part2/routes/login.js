@@ -15,6 +15,7 @@ router.post('/', async(req, res) => {
 
         await connection.end();
 
+        // 
         if(rows.length === 0){
             return res.status(401).json({ error: 'Invalid username or password'});
         }
