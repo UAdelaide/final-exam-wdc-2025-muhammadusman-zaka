@@ -26,7 +26,9 @@ router.post('/', async(req, res) => {
             return res.status(401).json({ error: 'Invalid username or password'});
         }
         req.session.user_id = user.user_id;
-        req.session.username = 
+        req.session.username = user.username;
+        req.session.role = user.role;
+
         return res.status(200).json({ username: user.username, role: user.role});
     } catch(err){
         res.status(500).json({ error: 'Server error' });
