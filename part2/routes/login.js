@@ -8,7 +8,9 @@ router.post('/', async(req, res) => {
         var connection = await dbConnection();
         var [rows] = await connection.query(
             `SELECT user_id, username, role, password_hash
-             FROM `
+             FROM Users
+             WHERE username = ? LIMIT 1`,
+             
         )
     }
 
