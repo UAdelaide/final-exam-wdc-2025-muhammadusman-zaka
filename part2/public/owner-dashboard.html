@@ -132,8 +132,10 @@
               headers: { 'Content-Type': 'application/json'}
             });
             if(!res.ok){
-              
+              throw new Error("Logout failed");
             }
+
+            
           }
         }
 
