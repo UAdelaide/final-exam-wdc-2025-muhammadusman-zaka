@@ -84,8 +84,8 @@
 
         onMounted(() => {
           var role = sessionStorage.getItem('userRole');
-          if(role != 'owner'){
-            
+          if(role != 'walker'){
+            // User is not logged in as walker 
           }
           loadWalkRequests();
         });
