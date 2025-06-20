@@ -51,6 +51,8 @@
             if(!response.ok) throw new Error('Login Failed');
 
             var user = await response.json();
+
+            sessionStorage.setItem('userRole', user.role)
           }
         }
 
