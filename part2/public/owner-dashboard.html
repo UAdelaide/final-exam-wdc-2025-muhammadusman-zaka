@@ -130,6 +130,7 @@
           window.location.href = 'index.html';
         }
 
+        const dogs = ref([])
         onMounted(() => {
           var role = sessionStorage.getItem('userRole');
           if(role != 'owner'){
