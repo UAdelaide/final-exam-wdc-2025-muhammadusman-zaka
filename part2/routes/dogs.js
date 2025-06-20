@@ -8,7 +8,9 @@ router.get('/', async(req, res) => {
         var connection = await dbConnection();
 
         let sql = `
-        SELECT d.dog_id, d.name AS dog_name, d.size 
+        SELECT d.dog_id, d.name AS dog_name, d.size, u.username AS owner_username
+        FROM Dogs d
+        JOIN Users u on 
         `
         await connection.end();
         res.status(200).json(rows);
