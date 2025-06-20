@@ -34,7 +34,7 @@ app.use('/api/dogs', dogRouter);
 
 app.use('/api/users', usRoute);
 
-app.use('/logout',logoutRouter);
+app.use('/logout', logoutRouter);
 
 // Export the app instead of listening here
 module.exports = app;
