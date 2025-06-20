@@ -17,9 +17,9 @@ router.get('/summary', async (req, res) => {
             GROUP BY u.username`
         );
         await connection.end();
-        res.sendStatus(200).json(rows);
+        res.status(200).json(rows);
     } catch(err){
-        res.sendStatus(500).json({ error: err.message });
+        res.status(500).json({ error: err.message });
     }
 });
 
