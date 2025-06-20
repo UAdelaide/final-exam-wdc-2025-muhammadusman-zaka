@@ -23,6 +23,6 @@ app.use('/users', usersRouter);
 
 app.use('/api/dogs', dogsRouter);
 app.use('/api/walkers', walkersRouter);
-app.use('/api/walkers', walkersRouter)
+app.use('/api/walkrequests', walkRequestsRouter);
 
 module.exports = app;
