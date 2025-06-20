@@ -7,8 +7,8 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var dogsRouter = require('../part1/routes/dogs');
-var walRouter = require('../part1/routes/dogs');
-var dogsRouter = require('../part1/routes/dogs');
+var walkersRouter = require('../part1/routes/walkers');
+var walkRequestsRouter = require('../part1/routes/dogs');
 
 var app = express();
 
