@@ -22,7 +22,7 @@ const userRoutes = require('./routes/userRoutes');
 const loginRouter = require('./routes/login');
 const dogRouter = require('./routes/dogs');
 const usRoute = require('./routes/users');
-const logoutRouter = require('./')
+const logoutRouter = require('./routes/logout');
 
 app.use('/api/login', loginRouter);
 
