@@ -6,8 +6,10 @@ router.get('/', async(req, res) => {
     try{
         var owner = req.query.owner;
         var connection = await dbConnection();
-        
-        
+
+        let sql = `
+        SELECT 
+        `
         await connection.end();
         res.status(200).json(rows);
 
