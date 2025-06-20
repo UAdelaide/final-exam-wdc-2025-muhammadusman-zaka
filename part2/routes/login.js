@@ -12,6 +12,10 @@ router.post('/', async(req, res) => {
              WHERE username = ? LIMIT 1`,
              [username]
         );
+
+        await connection.end();
+
+        if(rows.length === 0)
     }
 
 });
