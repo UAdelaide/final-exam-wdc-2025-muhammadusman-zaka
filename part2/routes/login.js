@@ -26,7 +26,7 @@ router.post('/', async(req, res) => {
 
         res.status(200).json({ username: user.username, role: user.role});
     } catch(err){
-        res.status(500).json({ error: 'Server error'})
+        res.status(500).json({ error: 'Server error'});
     }
 
 });
