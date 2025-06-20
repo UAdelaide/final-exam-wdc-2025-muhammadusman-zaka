@@ -51,6 +51,7 @@
           try {
             var response = await fetch('api/login', {
               method: 'POST',
+              credentials: 'include',
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify({ username: this.username, password: this.password })
             });
