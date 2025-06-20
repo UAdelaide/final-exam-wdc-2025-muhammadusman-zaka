@@ -7,4 +7,4 @@ const db = {
     database: 'DogWalkService'
 };
 
-module.exports = async 
+module.exports = async () => mysql.createConnection(db)
