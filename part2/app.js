@@ -22,7 +22,7 @@ app.use('/api/users', userRoutes);
 
 app.use('/api/dogs', dogRouter);
 
-app.use('/users', usRoute);
+app.use('api/users', usRoute);
 
 // Export the app instead of listening here
 module.exports = app;
