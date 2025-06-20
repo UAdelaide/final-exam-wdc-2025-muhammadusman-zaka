@@ -138,7 +138,8 @@
             sessionStorage.clear();
             window.location.href = 'index.html';
           } catch(err){
-            error.value 
+            error.value = err.message;
+            message.value = '';
           }
         }
 
