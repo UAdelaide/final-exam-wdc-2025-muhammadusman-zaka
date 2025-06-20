@@ -11,4 +11,6 @@ router.get('/me', (req, res) => {
         username: req.session.username,
         role: req.session.role
     });
-})
+});
+
+module.exports = router;
