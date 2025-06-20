@@ -7,7 +7,8 @@ router.post('/', async(req, res) => {
     try{
         var connection = await dbConnection();
         var [rows] = await connection.query(
-            
+            `SELECT user_id, username, role, password_hash
+             FROM `
         )
     }
 
