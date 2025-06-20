@@ -70,7 +70,8 @@
         async loadDogsWithPhotos(){
           try{
             const res = await fetch('/api/dogs');
-            if(!res.ok)
+            if(!res.ok) throw new Error('Failed to load dogs');
+            const dogsData
           }
         }
         async handleLogin() {
