@@ -7,7 +7,8 @@ router.get('/summary', async (req, res) => {
         var connection = dbConnection();
         const [rows] = await connection.query(
             `SELECT u.username AS walker_username,
-                    COUNT(wr.rating)`
+                    COUNT(wr.rating) AS total_ratings`
+                    AudioProcessingEvent()
         );
     }
 })
