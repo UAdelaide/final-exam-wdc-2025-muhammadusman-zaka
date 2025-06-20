@@ -11,7 +11,7 @@ router.get('/summary', async (req, res) => {
                     AVG(wr.rating) AS average_rating,
                     SUM(CASE WHEN wreq.status = 'completed' THEN 1 ELSE 0 END) AS completed_walks
             FROM Users u
-            LEFT JOIN WalkApplications wa ON u.user`
+            LEFT JOIN WalkRatings r ON u.user_id = `
 
         );
     }
