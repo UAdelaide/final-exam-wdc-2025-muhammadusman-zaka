@@ -15,11 +15,12 @@ router.post('/', async(req, res) => {
 
         await connection.end();
 
-        // 
+        // The user does not exist in the database
         if(rows.length === 0){
             return res.status(401).json({ error: 'Invalid username or password'});
         }
 
+        // Passwords do not match
         var user = rows[0];
         if(user.password_hash !== password){
             return res.status(401).json({ error: 'Invalid username or password'});
