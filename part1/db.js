@@ -6,3 +6,5 @@ const db = {
     password: '',
     database: 'DogWalkService'
 };
+
+module.exports = async 
