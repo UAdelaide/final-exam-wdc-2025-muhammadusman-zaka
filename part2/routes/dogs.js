@@ -20,6 +20,8 @@ router.get('/', async(req, res) => {
             sql += `WHERE u.username = ?`;
             params.push(owner);
         }
+
+        const [rows] = await
         await connection.end();
         res.status(200).json(rows);
 
