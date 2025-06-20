@@ -49,6 +49,8 @@
             });
 
             if(!response.ok) throw new Error('Login Failed');
+
+            var user = await response.json();
           }
         }
 
