@@ -145,7 +145,7 @@
         async function loadDogs(){
           try{
             var username = sessionStorage.getItem('username');
-            var res = await fetch('/api')
+            var res = await fetch('/api/dogs?owner=${username}');
           }
         }
 
