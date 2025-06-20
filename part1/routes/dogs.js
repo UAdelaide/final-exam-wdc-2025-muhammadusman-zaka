@@ -3,5 +3,7 @@ var router = express.Router();
 var dbConnection = require('../db');
 
 router.get('/', async(req, res) => {
-
-}0;
+    try{
+        var connection 
+    }
+});
