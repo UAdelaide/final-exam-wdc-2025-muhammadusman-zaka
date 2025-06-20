@@ -19,7 +19,7 @@ app.use('/api/login', loginRouter);
 app.use('/api/walks', walkRoutes);
 app.use('/api/users', userRoutes);
 
-app.use('')
+app.use('/a')
 
 // Export the app instead of listening here
 module.exports = app;
