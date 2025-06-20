@@ -28,7 +28,6 @@ const { log } = require('console');
 app.use('/api/login', loginRouter);
 
 app.use('/api/walks', walkRoutes);
-app.use('/api/users', userRoutes);
 
 app.use('/api/dogs', dogRouter);
 
