@@ -10,6 +10,5 @@ router.get('/me', (req, res) => {
         user_id: req.session.user_id,
         username: req.session.username,
         role: req.session.role
-
     });
 })
