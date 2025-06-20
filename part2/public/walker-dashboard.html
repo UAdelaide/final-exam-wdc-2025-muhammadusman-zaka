@@ -54,6 +54,8 @@
             if(!res.ok) throw new Error('Unable to fetch current user');
             const user = await res.json();
             currentUserId.value = user.user_id;
+          } catch(err){
+            error.value;
           }
         }
 
