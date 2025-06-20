@@ -8,7 +8,9 @@ router.get('/summary', async (req, res) => {
         const [rows] = await connection.query(
             `SELECT u.username AS walker_username,
                     COUNT(wr.rating) AS total_ratings,
-                    AVG(wr.rating) AS average_rating`
+                    AVG(wr.rating) AS average_rating,
+                    SUM()`
+
         );
     }
 })
