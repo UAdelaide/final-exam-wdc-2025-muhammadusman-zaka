@@ -6,7 +6,8 @@ router.get('/summary', async (req, res) => {
     try{
         var connection = dbConnection();
         const [rows] = await connection.query(
-            `SELECT u.username AS `
+            `SELECT u.username AS walker_username,
+                    COUNT(wr.rating)`
         );
     }
 })
