@@ -48,7 +48,7 @@
               body: JSON.stringify({ username: this.username, password: this.password})
             });
 
-            if(!response.ok)
+            if(!response.ok) throw new Error('Login Failed');
           }
         }
 
