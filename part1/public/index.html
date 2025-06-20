@@ -31,7 +31,7 @@
                     try{
                         let res = await fetch('https://dog.ceo/api/breeds/image/random');
                         let data = await res.json();
-                        this.dogUrl = data
+                        this.dogUrl = data.message;
                     }
                 }
             }
