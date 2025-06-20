@@ -18,7 +18,6 @@ app.use(session({
 
 // Routes
 const walkRoutes = require('./routes/walkRoutes');
-const userRoutes = require('./routes/userRoutes');
 const loginRouter = require('./routes/login');
 const dogRouter = require('./routes/dogs');
 const usRoute = require('./routes/users');
