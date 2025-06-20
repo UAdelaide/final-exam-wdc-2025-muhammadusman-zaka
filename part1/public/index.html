@@ -32,6 +32,8 @@
                         let res = await fetch('https://dog.ceo/api/breeds/image/random');
                         let data = await res.json();
                         this.dogUrl = data.message;
+                    } catch (e){
+                        alert()
                     }
                 }
             }
