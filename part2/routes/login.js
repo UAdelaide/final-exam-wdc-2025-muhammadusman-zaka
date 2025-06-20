@@ -25,6 +25,8 @@ router.post('/', async(req, res) => {
         }
 
         res.status(200).json({ username: user.username, role: user.role});
-    } catch
+    } catch(err){
+        res.status
+    }
 
 });
