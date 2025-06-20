@@ -127,6 +127,7 @@
 
         function logout(){
           sessionStorage.clear();
+          fetch('/logout');
         }
 
         const dogs = ref([]);
