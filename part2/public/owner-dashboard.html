@@ -126,8 +126,9 @@
         }
 
         async function logout(){
-          sessionStorage.clear();
-          fetch('/logout');
+          try{
+            const res = await fetch('/logout')
+          }
         }
 
         const dogs = ref([]);
