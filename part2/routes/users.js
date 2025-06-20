@@ -6,5 +6,7 @@ router.get('/me', (req, res) => {
         return res.status(401).json({ error: 'Not authenticated' });
     }
 
-    res.status
+    res.status(200).json({
+        
+    });
 })
