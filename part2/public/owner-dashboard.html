@@ -148,11 +148,14 @@
             var res = await fetch('/api/dogs?owner=${username}');
             if(!res.ok) throw new Error('Failed to load dogs');
             dogs.value = await res.json();
-          } catch(err){}
+          } catch(err){
+            error.value = err.message;
+          }
         }
 
         return {
           form,
+          dogs,
           walks,
           message,
           error,
