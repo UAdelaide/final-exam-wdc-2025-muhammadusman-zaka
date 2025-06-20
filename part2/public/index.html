@@ -65,9 +65,11 @@
           errorMessage: ''
         };
       },
+
       async mounted(){
         await this.loadDogsWithPhotos();
-      }
+      },
+
       methods: {
         async loadDogsWithPhotos(){
           try{
