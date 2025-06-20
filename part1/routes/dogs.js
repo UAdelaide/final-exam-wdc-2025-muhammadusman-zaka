@@ -11,4 +11,6 @@ router.get('/', async(req, res) => {
              Join Users u on d.owner_id = u.user_id`
         );
     }
+    await connection.end();
+    res.sendStatus(200).json(rows);
 });
