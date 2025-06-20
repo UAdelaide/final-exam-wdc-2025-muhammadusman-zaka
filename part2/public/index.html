@@ -52,7 +52,8 @@
 
             var user = await response.json();
 
-            sessionStorage.setItem('userRole', user.role)
+            sessionStorage.setItem('userRole', user.role);
+            sessionStorage.setItem('username', user.username)
           }
         }
 
