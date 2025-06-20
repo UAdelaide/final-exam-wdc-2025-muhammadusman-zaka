@@ -19,7 +19,8 @@ router.post('/', async(req, res) => {
             return res.status(401).json({ error: 'Invalid username or password'});
         }
 
-        var user = 
+        var user = rows[0];
+        if(user.password_hash !== password)
     }
 
 });
