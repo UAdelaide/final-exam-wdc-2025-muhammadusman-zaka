@@ -13,6 +13,7 @@ const walkRoutes = require('./routes/walkRoutes');
 const userRoutes = require('./routes/userRoutes');
 const loginRouter = require('./routes/login');
 const dogRouter = require('./routes/dogs');
+const usRoute = require('./')
 
 app.use('/api/login', loginRouter);
 
