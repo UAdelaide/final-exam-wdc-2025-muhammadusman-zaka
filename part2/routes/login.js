@@ -23,6 +23,8 @@ router.post('/', async(req, res) => {
         if(user.password_hash !== password){
             return res.status(401).json({ error: 'Invalid username or password'});
         }
+
+        res.status(200).json({})
     }
 
 });
