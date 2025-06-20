@@ -125,7 +125,7 @@
           }
         }
 
-        function logout(){
+        async function logout(){
           sessionStorage.clear();
           fetch('/logout');
         }
