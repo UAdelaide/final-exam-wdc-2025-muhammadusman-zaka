@@ -8,6 +8,8 @@ router.get('/me', (req, res) => {
 
     res.status(200).json({
         user_id: req.session.user_id,
+        username: req.session.username,
+        role: req.session.role
 
     });
 })
