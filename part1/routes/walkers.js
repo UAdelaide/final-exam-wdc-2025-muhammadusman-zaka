@@ -15,7 +15,7 @@ router.get('/summary', async (req, res) => {
             LEFT JOIN WalkRequests wr ON wr.request_id = wr.request_id
             WHERE u.role = 'walker'
             GROUP BY u.username`
-
         );
+        
     }
 })
