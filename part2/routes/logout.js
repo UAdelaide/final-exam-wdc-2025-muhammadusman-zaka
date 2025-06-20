@@ -3,7 +3,7 @@ var router = express.Router();
 
 router.post('/', (req,res) => {
     req.session.destroy((err) => {
-        if(err) return res.status(500).json
+        if(err) return res.status(500).json({ error: fa})
     });
 
 });
