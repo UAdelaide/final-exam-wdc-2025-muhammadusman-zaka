@@ -10,7 +10,9 @@ var usersRouter = require('./routes/users');
 var app = express();
 
 const db = {
-    host: 
+    host: 'localhost',
+    user: 'root',
+    password: '',
 }
 
 app.use(logger('dev'));
