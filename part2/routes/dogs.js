@@ -4,6 +4,7 @@ var dbConnection = require('../db');
 
 router.get('/', async(req, res) => {
     try{
+        var owner = 
         var connection = await dbConnection();
         var [rows] = await connection.query(
             `SELECT d.name AS dog_name, d.size, u.username AS owner_username
