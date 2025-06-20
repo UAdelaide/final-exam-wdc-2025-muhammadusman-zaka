@@ -1,3 +1,3 @@
 var express = require('express');
 var router = express.Router();
-var dbConnection = require('..')
+var dbConnection = require('../db')
