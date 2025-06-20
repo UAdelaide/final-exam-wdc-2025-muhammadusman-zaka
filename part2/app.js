@@ -23,6 +23,7 @@ const loginRouter = require('./routes/login');
 const dogRouter = require('./routes/dogs');
 const usRoute = require('./routes/users');
 const logoutRouter = require('./routes/logout');
+const { log } = require('console');
 
 app.use('/api/login', loginRouter);
 
@@ -32,6 +33,8 @@ app.use('/api/users', userRoutes);
 app.use('/api/dogs', dogRouter);
 
 app.use('/api/users', usRoute);
+
+app.use('/logout',logoutRouter);
 
 // Export the app instead of listening here
 module.exports = app;
