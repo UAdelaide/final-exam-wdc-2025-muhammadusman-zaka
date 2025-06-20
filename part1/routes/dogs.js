@@ -11,10 +11,10 @@ router.get('/', async(req, res) => {
              Join Users u on d.owner_id = u.user_id`
         );
         await connection.end();
-        res.sendStatus(200).json(rows);
+        res.status(200).json(rows);
 
     } catch(err){
-        res.sendStatus(500).json({ error: err.message });
+        res.status(500).json({ error: err.message });
     }
 });
 
