@@ -79,9 +79,9 @@
                 const imgData = await imgRes.json();
                 return {
                   ...dog,
-                  photoUrl
-                }
-              })
+                  photoUrl: imgData.message
+                };
+              });
             )
           }
         }
