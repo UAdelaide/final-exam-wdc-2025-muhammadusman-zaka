@@ -5,6 +5,8 @@ var dbConnection = require('../db');
 router.get('/open', async (req, res) => {
     try{
         var connection = await dbConnection();
-        const
+        const [rows] = await connection.query(
+            `SELECT `
+        );
     }
 });
