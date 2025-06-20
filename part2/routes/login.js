@@ -10,8 +10,8 @@ router.post('/', async(req, res) => {
             `SELECT user_id, username, role, password_hash
              FROM Users
              WHERE username = ? LIMIT 1`,
-             
-        )
+             [username]
+        );
     }
 
 });
