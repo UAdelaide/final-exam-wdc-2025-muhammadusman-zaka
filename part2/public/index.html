@@ -42,7 +42,10 @@
         async handeLogin(){
           this.errorMessage = '';
           try{
-            var response = await fetch
+            var response = await fetch('api/login', {
+              method: 'POST',
+              headers: { 'Content'}
+            })
           }
         }
 
