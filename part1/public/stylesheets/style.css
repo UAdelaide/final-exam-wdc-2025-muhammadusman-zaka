@@ -4,6 +4,7 @@ body {
   font-size: 10px;
 }
 
-a {
-  color: #00B7FF;
+button{
+  margin-top: 50px;
+  padding: 50px;
 }
