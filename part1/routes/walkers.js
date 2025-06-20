@@ -4,6 +4,7 @@ var dbConnection = require('../db');
 
 router.get('/summary', async (req, res) => {
     try{
-        var connection = 
+        var connection = dbConnection();
+        var [rows] = (await connection).query()
     }
 })
