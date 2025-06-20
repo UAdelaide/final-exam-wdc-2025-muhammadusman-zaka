@@ -6,7 +6,7 @@ router.get('/open', async (req, res) => {
     try{
         var connection = await dbConnection();
         const [rows] = await connection.query(
-            `SELECT `
+            `SELECT wr.request_id, d.name AS dog_name, wr.requested`
         );
     }
 });
