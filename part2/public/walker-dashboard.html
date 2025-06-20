@@ -90,7 +90,7 @@
 
         function logout(){
           sessionStorage.clear();
-          fetch 
+          const res = await fetch('/logout')
         }
 
         onMounted(() => {
