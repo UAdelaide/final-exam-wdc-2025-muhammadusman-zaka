@@ -18,5 +18,7 @@ router.get('/summary', async (req, res) => {
         );
         await connection.end();
         res.sendStatus(200).json(rows);
+    } catch(err){
+        res.sendStatus
     }
 })
