@@ -14,7 +14,7 @@ router.get('/open', async (req, res) => {
         );
         await connection.end();
         res.sendStatus(200).json(rows);
-    } catch{
-        
+    } catch(err){
+        res.sendStatus(500).json({error})
     }
 });
