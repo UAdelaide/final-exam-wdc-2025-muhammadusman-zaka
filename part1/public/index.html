@@ -3,12 +3,13 @@
 <head>
     <title>Dog of the Day</title>
     <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
 </head>
 
 <body>
     <div class="app">
         <h1>DOG OF THE DAY!</h1>
-        <img v-if="dogUrl" :src >
+        <img v-if="dogUrl" :src="dogUrl">
     </div>
 </body>
 </html>
