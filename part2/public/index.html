@@ -103,7 +103,9 @@
         }
 
         async mounted(){
-          
+          try{
+            const response = await fetch('/api/dogs')
+          }
         }
       }
     }).mount('#app');
