@@ -115,8 +115,9 @@
                   const imgData = await imgResponse.json();
                   dog.photoUrl = imgData.message;
                 } catch{
-                  dog.photoUrl = '#'
+                  dog.photoUrl = '#';
                 }
+                return dog;
               })
             )
           }
