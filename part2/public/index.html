@@ -100,9 +100,10 @@
           } catch (err) {
             this.errorMessage = 'Invalid username or password';
           }
-        },
+        }
+      },
 
-        async mounted(){
+      async mounted(){
           try{
             const response = await fetch('/api/dogs');
             if(!res.ok) throw new Error('Failed to get dogs');
@@ -125,7 +126,6 @@
             this.errorMessage = err.message;
           }
         }
-      }
     }).mount('#app');
   </script>
 
