@@ -109,7 +109,9 @@
             var dogsData = await res.json();
 
             var photosDogs = await Promise.all(
-              dogsData
+              dogsData.map(async (dog) => {
+                
+              })
             )
           }
         }
